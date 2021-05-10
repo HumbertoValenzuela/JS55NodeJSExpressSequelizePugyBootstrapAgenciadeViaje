@@ -1,0 +1,34 @@
+extends ./layout/index
+block slider
+  .slider 
+    h1 Rio de Janeiro
+    em aventura
+block contenido
+    main.container.mt-5 
+      h2.text-center.mb-5 Sobre Nosotros
+      .row.mb-5 
+        .col-md-6 
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id molestie eros, at facilisis urna. Donec consectetur sed nisi a commodo. Sed tellus tellus, semper id dui non, laoreet fermentum libero. Duis lorem nulla, facilisis eu urna eget, aliquam pretium elit. Pellentesque maximus et quam in imperdiet. Morbi fringilla sed magna vel tempus.
+          p Vestibulum nec leo in felis volutpat cursus ut vel nulla. Nunc sodales odio ac dictum mollis. Vivamus eget diam odio. Duis convallis lobortis risus sed venenatis. Donec non libero congue, sodales nibh at, rhoncus arcu. Sed sodales interdum porta. Donec pretium, magna vitae ullamcorper hendrerit, lorem nisl pharetra lectus, quis aliquam urna ante eu erat. Phasellus at mi nec dolor convallis tincidunt. Mauris pellentesque nulla ornare turpis convallis porttitor. Proin ut ornare tortor. 
+        .col-md-6
+          img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+          //- img-fluid clase de bootstrap para responsive image
+          //- p= JSON.stringify(viajes)
+
+      include ./layout/bloque_viajes
+    .descuento 
+      .container
+        .row 
+          .col-md-6 
+            .contenido 
+              h3 5% de Descuento 
+              p.titulo Viaje a Canada 
+              p.fecha 10 de Mayo 2022 - 28 de Mayo de 2022
+              p.precio $2.500
+    .container
+      h2.mt-5.text-center Testimoniales
+      //- Dará error porque se quiere consultar a la bd
+      //- ir paginacontroller
+      include ./layout/bloque_testimoniales
+      
+//- p #{textoViajes}

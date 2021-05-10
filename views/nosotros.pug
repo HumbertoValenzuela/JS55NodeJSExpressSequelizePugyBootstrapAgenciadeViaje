@@ -1,0 +1,56 @@
+extends ./layout/index
+//- extends y block es para agregar bloques de contenido en inicio.pug. ojo con la identación es importante en pug
+block contenido
+  main.container.mt-5 
+    .row 
+      .col-md-5 
+        img(src="img/nosotros.jpg", alt="Imagen sobre nosotros", class="img-fluid")
+      .col-md-7 
+        h1 #{pagina}
+        blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus sem et sem dignissim mattis. Sed et varius enim. Sed ullamcorper, felis sit amet placerat varius, lectus tellus consequat augue, in laoreet ligula enim eu odio. Ut fringilla blandit semper. Maecenas ultrices lobortis posuere. Mauris quis nibh quis sem condimentum 
+
+        p Nam eu cursus sem, at porta ipsum. Donec metus velit, luctus in porttitor a, vehicula ut nisl. Praesent in vestibulum sem. Vivamus a scelerisque leo, fringilla sollicitudin arcu. Vestibulum ac sapien neque. Vestibulum 
+
+        p Suspendisse at dignissim felis, eu ullamcorper lacus. Maecenas quis faucibus velit. Praesent laoreet tincidunt sem vitae dictum. Nulla quis tempus est, at molestie quam. Suspendisse sed ipsum a lectus molestie luctus ac vel 
+  .listado-iconos 
+    .container.mt-5.py-5.text-center
+      .row 
+        .col-md-4 
+          img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb4")
+          h2.mb-4 Seguridad
+          p vitae dictum. Nulla quis tempus est, at molestie quam. Suspendisse sed ipsum a lectus molestie luctus ac vel
+        
+        .col-md-4 
+          img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb4")
+          h2.mb-4 Mejores Destinos
+          p vitae dictum. Nulla quis tempus est, at molestie quam. Suspendisse sed ipsum a lectus molestie luctus ac vel
+
+        .col-md-4 
+          img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb4")
+          h2.mb-4 Mejores Precios
+          p vitae dictum. Nulla quis tempus est, at molestie quam. Suspendisse sed ipsum a lectus molestie luctus ac vel
+//- p= textoViajes
+//- p #{textoViajes}
+
+//- 7. Que es un Template Engine y Habilitando Pug
+
+//- Son la V del MVC
+//- Permite mostrar la parte visual en una aplicación express, debido a que el modelo retorna un objeto(o arreglo) de dato, un template engine permitirá acceder a los resultados de una consulta y mostrarlos en pantalla
+//- Los más comunes en node – Express.
+//- PUG – (antes JADE)
+//- EJS – Embedded JavaScript
+//- HBS –Handlebars.js (Mustache.js)
+//- REACT
+
+//- Un template engine se instalá vía NPM npm install pug
+//- Y se habilita en el archivo principal
+//- Para habilitar pug: app.set(‘view engine’, ‘pug’);
+
+//- Instalar pug: npm install pug
+//- Pug es una dependencia de producción
+
+//- ¿Cómo se pasan valores hacia la Vista?
+//- 8. Pasar variables hacia las vistas
+
+
+//- 9. Creando un Layout Principal
